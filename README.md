@@ -35,6 +35,10 @@ Node.js (v18+ recommandé),
 Expo CLI
 
 ## Installation
+Si Expo CLI n'est pas installé, exécutez la commande suivante :
+```bash
+npm install -g expo-cli
+````
 
 1. Cloner le dépôt :
 
