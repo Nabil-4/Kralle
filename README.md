@@ -43,7 +43,7 @@ npm install -g expo-cli
 1. Cloner le dépôt :
 
 ```bash
-git clone https://github.com/nom-utilisateur/nom-du-projet.git
+git clone https://github.com/Nabil-4/Kralle.git
 ```
 
 3. Installer les dépendances :
