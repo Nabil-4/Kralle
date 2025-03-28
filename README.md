@@ -10,6 +10,14 @@ Kralle allows users to interact and share content with various features, includi
 - **Messaging**: Send messages between users
 - **Post Sharing**: Share text and image-based posts
 
+### 📱 App Screenshots
+
+| Login Screen               | Messaging Feature              | Post Sharing               |
+|----------------------------|--------------------------------|----------------------------|
+| ![Login](./assets/login.png) | ![Messaging](./assets/messaging.png) | ![Post](./assets/post.png) |
+
+
+
 ## ✨ Key Features
 
 - **User Authentication**: Secure login and registration
