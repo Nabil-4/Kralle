@@ -12,9 +12,9 @@ Kralle allows users to interact and share content with various features, includi
 
 ### 📱 App Screenshots
 
-| Home Screen               | Sign Up Feature              | Post Sharing               |
+| Home Screen               | Login             | Post Sharing               |
 |----------------------------|--------------------------------|----------------------------|
-| ![Login](./assets/bienvenue.png) | ![Messaging](./assets/inscription.png) | ![Post](./assets/recommendation.png) |
+| <img src="./client/assets/acceuil.png" alt="Description de l'image"  height="300">| <img src="./client/assets/connexion.png" alt="Description de l'image"  height="300"> | <img src="./client/assets/recommendation.png" alt="Description de l'image"  height="300"> |
 
 
 
