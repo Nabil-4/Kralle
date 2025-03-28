@@ -1,7 +1,6 @@
 const express = require('express')
 const cors = require('cors')
 const cookieParser = require("cookie-parser")
-const { baseURL } = require('../client/axios');
 
 const app = express()
 
@@ -11,7 +10,7 @@ app.use((req, res, next) => {
 })
 app.use(express.json())
 app.use(cors({
-    origin : baseURL
+    origin : 'http://localhost:8080'
 }))
 app.use(cookieParser())
 app.use('/uploads', express.static('uploads'))
