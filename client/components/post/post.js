@@ -5,6 +5,7 @@ import Moment from 'moment'
 import UserProfil from './userProfil'
 import AddFavoris from './addFavoris'
 import Liked from './likes'
+import {baseURL} from "../../axios"
 
 
 export default Post = ({post}) => {
@@ -23,7 +24,7 @@ export default Post = ({post}) => {
                     </View>  
                     <Text style={post.contain && styles.postText}>{post.contain}</Text>
                     {post.img && <View style={{maxHeight: 320}}>
-                        <Image style={styles.imagePost} source={{uri: `http://192.168.1.12:8080/uploads/posts/${post.img}`}}/>
+                        <Image style={styles.imagePost} source={{uri: `${baseURL}/uploads/posts/${post.img}`}}/>
                     </View>}
                     <View style={{flexDirection: 'row', justifyContent: 'center', justifyContent: 'space-between'}}>
                         <TouchableOpacity onPress={() => push('PostDetail', {post})} style={{flexDirection: 'row'}}>

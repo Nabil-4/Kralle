@@ -4,7 +4,7 @@ import {AuthContext} from '../../context/authContext'
 import {Ionicons} from '@expo/vector-icons'
 import {useState, useContext} from "react"
 import {useNavigation} from "@react-navigation/native";
-import {Request} from "../../axios"
+import {Request, baseURL} from "../../axios"
 
 
 export default ModifyUser = () => {
@@ -91,13 +91,13 @@ export default ModifyUser = () => {
     return (
         <View style={{backgroundColor: "#fff", flex: 1}}> 
             <View style={styles.bannerContainer}>
-                <Image style={styles.bannerImg} source={{uri: bannerPicture ? bannerPicture : `http://192.168.1.12:8080/uploads/users/${user.bannerPicture}`}}/>
+                <Image style={styles.bannerImg} source={{uri: bannerPicture ? bannerPicture : `${baseURL}/uploads/users/${user.bannerPicture}`}}/>
                 <TouchableOpacity onPress={() => getBannnerPicture()} style={{position: 'absolute', top: '40%', left: '46%'}}>
                     <Ionicons name="images-outline" size={35}/>
                 </TouchableOpacity>    
             </View>
             <View style={styles.profilContainer}>
-                <Image style={styles.profilImg} source={{uri: profilPicture ? profilPicture : `http://192.168.1.12:8080/uploads/users/${user.profilPicture}`}}/>
+                <Image style={styles.profilImg} source={{uri: profilPicture ? profilPicture : `${baseURL}/uploads/users/${user.profilPicture}`}}/>
                 <TouchableOpacity onPress={() => getProfilPicture()} style={{position: 'absolute', top: '35%', left: '30%'}}>
                     <Ionicons name="images-outline" size={30}/>
                 </TouchableOpacity> 

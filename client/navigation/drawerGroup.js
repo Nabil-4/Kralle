@@ -7,6 +7,7 @@ import {AuthContext} from '../context/authContext'
 import {useContext} from 'react'
 import NbrOfFollow from '../components/profilComponents/nbrOfFollow'
 import NbrOfFollower from '../components/profilComponents/nbrOfFollower'
+import {baseURL} from '../axios'
 
 const Drawer = createDrawerNavigator()
 const {height} = Dimensions.get('window') 
@@ -28,7 +29,7 @@ export default DrawerGroup = () => {
                                     style={styles.drawerContent}>
                                     <View style={styles.imgAndUsernameContainer}>
                                         <Image 
-                                            source={{uri: `http://192.168.1.12:8080/uploads/users/${user.profilPicture}`}} 
+                                            source={{uri: `${baseURL}/uploads/users/${user.profilPicture}`}} 
                                             style={styles.userImg}
                                         />
                                         <Text style={{fontSize: 25}}>{user.username}</Text>

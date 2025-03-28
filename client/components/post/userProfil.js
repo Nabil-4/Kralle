@@ -3,7 +3,7 @@ import {useNavigation} from '@react-navigation/native'
 import {useContext} from 'react'
 import {AuthContext} from '../../context/authContext'
 import {useState, useEffect} from "react"
-import {Request} from "../../axios"
+import {baseURL, Request} from "../../axios"
 
 export default UserProfil = ({otherProfil, profilPicture}) => {
     const {push} = useNavigation()
@@ -24,7 +24,7 @@ export default UserProfil = ({otherProfil, profilPicture}) => {
     return (
         <TouchableOpacity onPress={() => isUser ? push('Profil') : push('OtherProfil', {profil})} style={{padding: 8, height: 50}}>
 
-            <Image source={{uri: `http://192.168.1.12:8080/uploads/users/${profilPicture}`}}
+            <Image source={{uri: `${baseURL}/uploads/users/${profilPicture}`}}
                 style={styles.userImg}
             />
         </TouchableOpacity>

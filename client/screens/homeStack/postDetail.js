@@ -9,7 +9,7 @@ import UserProfil from '../../components/post/userProfil'
 import Post from '../../components/post/post'
 import AddFavoris from '../../components/post/addFavoris'
 import Liked from '../../components/post/likes'
-import {Request} from '../../axios'
+import {Request, baseURL} from '../../axios'
 
 const {height, width} = Dimensions.get('window')
 
@@ -120,7 +120,7 @@ export default PostDetail = () => {
                         <View>
                             <Text style={{fontSize: 18, marginVertical: 5, marginLeft: post.img ? 5 : 0}}>{post.contain}</Text>
                             {post.img && <View style={{maxHeight: 320}}>
-                            <Image style={styles.imagePost} source={{uri: `http://192.168.1.12:8080/uploads/posts/${post.img}`}}/>
+                            <Image style={styles.imagePost} source={{uri: `${baseURL}/uploads/posts/${post.img}`}}/>
                         </View>}
                         </View>
                     </View>

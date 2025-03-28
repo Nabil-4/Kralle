@@ -8,6 +8,7 @@ import {Ionicons, Octicons} from '@expo/vector-icons'
 import {useNavigation} from "@react-navigation/native";
 import NbrOfFollower from "../../components/profilComponents/nbrOfFollower";
 import NbrOfFollow from "../../components/profilComponents/nbrOfFollow";
+import {baseURL} from "../../axios"
 
 
 const {height, width} = Dimensions.get('window')
@@ -28,9 +29,9 @@ export default Profil = () => {
                     <TouchableOpacity onPress={() => replace('ModifyUser', {user})} style={{position: 'absolute', top: height*0.04, right: width*0.03, zIndex:1}} >
                         <Octicons name="pencil" size={24} color={"#fff"}/>
                     </TouchableOpacity>    
-                    <Image style={{height: '100%'}} source={{uri:`http://192.168.1.12:8080/uploads/users/${user.bannerPicture}`}}/>
+                    <Image style={{height: '100%'}} source={{uri:`${baseURL}/uploads/users/${user.bannerPicture}`}}/>
                     <Image  
-                        source={{uri: `http://192.168.1.12:8080/uploads/users/${user.profilPicture}`}} 
+                        source={{uri: `${baseURL}/uploads/users/${user.profilPicture}`}} 
                         style={styles.userImg} 
                     />
                 </View>

@@ -6,7 +6,7 @@ import {FontAwesome, Entypo, Ionicons} from '@expo/vector-icons'
 import {AuthContext} from '../context/authContext'
 import Follow from '../screens/tobTabsScreens/follow'
 import Recomendation from '../screens/tobTabsScreens/recomendation'
-import {Request} from '../axios'
+import {Request, baseURL} from '../axios'
 
 const TopTabs = createMaterialTopTabNavigator()
 const {height, width} = Dimensions.get('window') 
@@ -105,7 +105,7 @@ export default TopTabGroup = () => {
                     <View>
                         <Image 
                             style={{width: 60, height: 60, borderRadius: 50, margin: 10}} 
-                            source={{uri: `http://192.168.1.12:8080/uploads/users/${user.profilPicture}`}}/>
+                            source={{uri: `${baseURL}/uploads/users/${user.profilPicture}`}}/>
                     </View>
                     <View style={{flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center'}}>
                         <TextInput ref={(input) => this.textInput = input} maxLength={240} multiline={true} style={styles.modalPostInput} placeholder='Quoi de neuf ?' onChangeText={text => handleChange(text, 'post')}></TextInput>

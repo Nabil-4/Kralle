@@ -7,6 +7,8 @@ import Message from '../screens/tabScreens/message'
 import Tendance from '../screens/tabScreens/tendance'
 import {AuthContext} from '../context/authContext'
 import {useContext} from 'react'
+import {baseURL} from '../axios'
+
 
 
 const Tab = createBottomTabNavigator()
@@ -20,7 +22,7 @@ export default BottomTabGroup = () => {
                 headerTitleAlign: 'center',
                 headerLeft : () => <TouchableOpacity onPress={() => nav.openDrawer()}> 
                                         <Image 
-                                            source={{uri: `http://192.168.1.12:8080/uploads/users/${user.profilPicture}`}} 
+                                            source={{uri: `${baseURL}/uploads/users/${user.profilPicture}`}} 
                                             style={styles.drawerButton}
                                         />
                                     </TouchableOpacity>

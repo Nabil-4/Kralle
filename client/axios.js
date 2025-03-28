@@ -1,6 +1,8 @@
 import axios from 'axios'
 
+export const baseURL = 'Your adresss ip + port';
+
 export const Request = axios.create({
-    baseURL: 'http://192.168.1.12:8080',
+    baseURL: baseURL,
     withCredentials: true
 })

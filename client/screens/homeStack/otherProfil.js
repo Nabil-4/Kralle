@@ -8,6 +8,7 @@ import FollowButton from "../../components/profilComponents/followButton";
 import NbrOfFollower from "../../components/profilComponents/nbrOfFollower";
 import NbrOfFollow from "../../components/profilComponents/nbrOfFollow";
 import MessageButton from "../../components/profilComponents/messageButton";
+import {baseURL} from "../../axios"
 
 const {height, width} = Dimensions.get('window')
 
@@ -25,9 +26,9 @@ export default OtherProfil = () => {
                     <TouchableOpacity onPress={() => nav.goBack()} style={{position: 'absolute', top: height*0.04, left: width*0.03, zIndex:1}} >
                         <Ionicons name="arrow-back-circle-outline" size={30} color={"#fff"}/>
                     </TouchableOpacity>     
-                    <Image style={{height: '100%'}} source={{uri:`http://192.168.1.12:8080/uploads/users/${profil.bannerPicture}`}}/>
+                    <Image style={{height: '100%'}} source={{uri:`${baseURL}/uploads/users/${profil.bannerPicture}`}}/>
                     <Image  
-                        source={{uri: `http://192.168.1.12:8080/uploads/users/${profil.profilPicture}`}} 
+                        source={{uri: `${baseURL}/uploads/users/${profil.profilPicture}`}} 
                         style={styles.userImg} 
                     />
                 </View>
