@@ -1,76 +1,87 @@
-# Kralle
+# Kralle - Social Media Mobile Application
 
-Application mobile react native type resaux social axee sur la communicaton et le partage de contenu multimedia.
+A **React Native** social media mobile application focused on communication and multimedia content sharing.
 
-📋 Description
+## 📋 Description
 
-Cette application permet de gérer diverses fonctionnalités, notamment :
+Kralle allows users to interact and share content with various features, including:
 
-- Gestion des utilisateurs (création, connexion, modification)
-- Envoie de message entre utilisateur
-- Partage de post : messages et images
+- **User Management**: Sign-up, login, and profile editing
+- **Messaging**: Send messages between users
+- **Post Sharing**: Share text and image-based posts
 
-✨ Fonctionnalités principales
+## ✨ Key Features
 
-- Authentification
-- Interface intuitive et réactive
-- CRUD (Create, Read, Update, Delete) complet
+- **User Authentication**: Secure login and registration
+- **Interactive UI**: Responsive and user-friendly interface
+- **Full CRUD Operations**: Create, Read, Update, Delete for users, messages, and posts
 
-🛠️ Technologies utilisées
+## 🛠️ Technologies Used
 
-- **Front-end :** [React Native (Expo)]
-- **Back-end :** [Node.js, Express]
-- **Base de données :** [MySQL]
-- **Autres :** [API REST, JWT]
+- **Front-end**: React Native (Expo)
+- **Back-end**: Node.js (Express)
+- **Database**: MySQL
+- **Others**: REST API, JWT (JSON Web Tokens)
 
-## Prérequis
+## 📌 Prerequisites
 
-📌 Prérequis
+Ensure you have the following installed on your machine:
 
-Assurez-vous d'avoir les éléments suivants installés sur votre machine :
+- **WampServer** (or equivalent for MySQL management)
+- **Android Studio** (for Android emulation)
+- **Node.js** (v18+ recommended)
+- **Expo CLI** (for running the React Native project)
 
-WampServeur,
-Android Studio,
-Node.js (v18+ recommandé),
-Expo CLI
+### Install Expo CLI
 
-## Installation
-Si Expo CLI n'est pas installé, exécutez la commande suivante :
+If Expo CLI is not installed, run the following command:
+
 ```bash
 npm install -g expo-cli
-````
+```
 
-1. Cloner le dépôt :
+## 📥 Installation
+
+1. **Clone the repository**:
 
 ```bash
 git clone https://github.com/Nabil-4/Kralle.git
 ```
 
-3. Installer les dépendances :
+2. **Navigate to the project folder**:
 
 ```bash
-[npm install]
+cd Kralle
 ```
 
+3. **Install dependencies**:
 
-## Démarer l'application
-Api :
 ```bash
-[node index.js]
+npm install
 ```
-Client : 
+
+## 🚀 Start the Application
+
+1. **Start the API (Back-end)**:
+
 ```bash
-[expo start --android]
+node index.js
 ```
 
+2. **Start the Mobile Client**:
 
-🔍 Utilisation
+```bash
+expo start --android
+```
 
-Accédez à l'interface utilisateur via Expo Go (sur Android/iOS) ou l'émulateur.
+## 🔍 Usage
 
-Connectez-vous avec vos identifiants ou creer un nouveau compte
+1. Access the application using **Expo Go** (on Android/iOS) or an emulator.
+2. Sign up or log in with your credentials.
+3. Customize your profile and share posts (text or images).
 
-Personnaliser votre profil et poster un message ou une photo.
 
+## 👤 Author
 
+- **Nabil** - [GitHub Profile](https://github.com/Nabil-4)
 
